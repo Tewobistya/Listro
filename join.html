@@ -7,34 +7,40 @@
 
 <body>
     <div class="buttons">
-        <button  class="button"> <a href="./home.html">Home</a> </button>
-        <button  class="button"> <a href="./Book_listro.html">Book a Listro</a> </button>
-        <button class="button"> <a href="./join.html">Join</a></button>
-        <button class="button"> <a href="./about_us.html">About Us</a></button>
-        <button class="button"> <a href="./our_team.html">Our Team</a></button>
+        <img src="logo.jpg" width="200" height="200"><a href="./home.html" class="button">Home</a>
+        <a href="./Book_listro.html" class="button">Book a Listro</a> </button>
+        <a href="./join.html" class="button">Join</a>
+        <a href="./our_team.html" class="button">Our team</a>
     </div>
     <div class="bg-img">
         <form action="/action_page.php" class="container">
-          <h1>Book Now!</h1>
+          <h1>Join!</h1>
       
           <label for="first"><b>First name </b></label>
           <input type="text" placeholder="Enter fisrt name" name="first" required>
           <label for="last"><b>Last name </b></label>
           <input type="text" placeholder="Enter Last name" name="last" required>
-          <label for="email"><b> Email </b></label>
-          <input type="text" placeholder="Enter Email" name="email" required>
+          <label for="Phone Number"><b> Phone Number </b></label>
+          <input type="text" placeholder="Enter No." name="phone number" required>
     
       
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
-          <p>Deposit 50 Br. to 1000368748</p>
+          <label for="id Number"><b>id Number</b></label>
+          <input type="text" placeholder="Enter id" name="id number" required>
+          <p>Deposit 100 Br. to 1000368748</p>
       
-          <button type="submit" class="btn"> Book</button>
+          <button  class="btn" id="join_btn"> Join</button>
         </form>
       </div>
+      <script>
+        const join = document.querySelector("#join_btn")
+    
+        join.addEventListener("click", function () {
+          alert("Joined Succesfully!")
+        })
+      </script>
    
     <h1> Become part of a bigger team </h1>
-    <p1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, sapiente, iusto facilis doloribus doloremque, dolorum reprehenderit ad repellendus totam earum temporibus rem corporis reiciendis aliquid esse optio perspiciatis nulla sunt?</p1>
+    
 </body>
 
 </html>

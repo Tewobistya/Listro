@@ -6,14 +6,48 @@
 
 <body>
     <div class="buttons">
-        <button  class="button"> <a href="./home.html">Home</a> </button>
-        <button  class="button"> <a href="./Book_listro.html">Book a Listro</a> </button>
-        <button class="button"> <a href="./join.html">Join</a></button>
-        <button class="button"> <a href="./about_us.html">About Us</a></button>
-        <button class="button"> <a href="./our_team.html">Our Team</a></button>
+        <img src="logo.jpg" width="200" height="200"><a href="./home.html" class="button">Home</a>
+        <a href="./Book_listro.html" class="button">Book a Listro</a> </button>
+        <a href="./join.html" class="button">Join</a>
+        <a href="./our_team.html" class="button">Our team</a>
     </div>
     <h1> Listros Near Me</h1>
-    <p1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, sapiente, iusto facilis doloribus doloremque, dolorum reprehenderit ad repellendus totam earum temporibus rem corporis reiciendis aliquid esse optio perspiciatis nulla sunt?</p1>
+
+
+    <img src="Map2.jpg">
+    <div class="register">
+        <form action="/action_page.php" class="container">
+          <h1>Register!</h1>
+          
+      
+          <label for="first"><b>First name </b></label>
+          <input type="text" placeholder="Enter fisrt name" name="first" required>
+          <label for="Phone Number"><b> Phone Number </b></label>
+          <input type="text" placeholder="Enter No." name="phone number" required>
+    
+      
+          <label for="id Number"><b>id Number</b></label>
+          <input type="text" placeholder="Enter id" name="id number" required>
+          <p>Which service do you want?<p>
+            <input type="checkbox" name="Cleaning" >
+            <label for="vehicle1"> Cleaning</label><br>
+            <input type="checkbox" name="Fixing" >
+            <label for="vehicle2"> Fixing</label><br>
+            <input type="checkbox" name="Washing" >
+            <label for="vehicle3"> Washing </label><br>
+          <p>Deposit 20 Br. to 1000368748</p>
+
+          <button class="btn" id="register_btn"> Register</button>
+        </form>
+      </div>
+      <script>
+        const register = document.querySelector("#register_btn")
+
+        register.addEventListener("click", function () {
+            alert("Registered Succesfully!")
+        })
+    </script>
+
 </body>
 
 </html>
